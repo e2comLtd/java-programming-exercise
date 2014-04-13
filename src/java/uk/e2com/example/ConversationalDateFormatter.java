@@ -160,10 +160,10 @@ public class ConversationalDateFormatter {
 	 */
 	public static void main(String[] args) {
 		ConversationalDateFormatter cdf = new ConversationalDateFormatter();
-		if (args.length > 1) {
-			cdf.format(args[1]);
+		if (args.length > 0) {
+			System.out.println(cdf.format(args[0]));
 		} else {
-			System.err.println("USAGE: \n java " + args[0] + " hour:minute");
+			System.err.println("USAGE: \n java " + cdf.getClass().getName() + " hour:minute");
 
 		}
 	}
